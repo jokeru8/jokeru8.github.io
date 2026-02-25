@@ -180,7 +180,7 @@
 }
 
 .author__name {
-  margin: 30px;
+  margin: 0;
 
   @include breakpoint($large) {
     margin-top: 10px;
