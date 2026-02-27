@@ -4,7 +4,7 @@ collection: project
 date: 2024-01-01
 ---
 
-## 项目视频
+## 介绍视频
 
 <video width="100%" controls>
   <source src="{{ site.baseurl }}/images/TurbidPose.mp4" type="video/mp4">
