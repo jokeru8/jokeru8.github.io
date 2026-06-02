@@ -54,19 +54,20 @@ github: [https://github.com/jokeru8](https://github.com/jokeru8)
 
 论文
 ======
-完整列表见 [Publications](/publications/)。
 
 ### ELAN4D — CoRL 2026 在投
 
-为 VLA 策略引入基于本体感知正运动学的机器人关键点 4D 轨迹监督，通过即插即用辅助分支提升分布外鲁棒性，推理阶段零额外开销。在 LIBERO、LIBERO-Plus、RoboTwin 2.0 及真机任务上一致优于强 VLA baseline。
-- 负责 AgileX Piper 机械臂真机部署与评估，涵盖视觉鲁棒性、空间泛化、长时序推理三类任务。
-- [PDF](/files/ELAN4D.pdf)
+面向 VLA 策略在分布外场景鲁棒性不足的问题，提出 embodiment-centric 4D 监督训练框架，通过即插即用辅助分支增强策略对未来动态的建模能力。
+- **创新点：** 利用 URDF 与关节角正运动学生成机器人关键点 4D 轨迹，作为紧凑监督信号，无需外部 tracker 或场景重建；ControlNet 风格轻量 track decoder 注入 4D 信号，梯度隔离保护预训练 VLM，推理阶段丢弃辅助分支，不改变策略接口。
+- **主要结果：** 在 LIBERO、LIBERO-Plus、RoboTwin 2.0 及真机任务上一致优于强 VLA baseline，相机、背景、布局等 OOD 扰动下提升尤为显著。
+- **个人贡献：** 负责 AgileX Piper 机械臂真机部署与评估，涵盖视觉鲁棒性、空间泛化、长时序推理三类任务。
 
 ### KAM-WM — CoRL 2026 在投
 
-从冻结 Flow Matching 视频模型单次查询中提取 Kinematic Affordance Map，为扩散策略提供「在哪交互 + 如何开始运动」的一阶视觉先验，无需 rollout 或微调世界模型。LIBERO 平均成功率 90.6%，RoboTwin 2.0 Easy/Hard 分别达 65.7% / 22.4%。
-- 负责真机侧系统搭建与部署验证，完成基于真机图像的策略 rollout 定性验证。
-- [PDF](/files/KAM_WM.pdf)
+面向少样本操作中静态先验（如 mask）只能定位「在哪」、无法编码接近方向的问题，提出从冻结视频世界模型中提取一阶交互先验的控制框架。
+- **创新点：** 对冻结 Wan 2.2 在 t=1.0 单次前向，读取 latent velocity 作为 Kinematic Affordance Map（KAM），同时提供交互区域与粗粒度运动结构；Perceiver 压缩为 8 tokens 条件化扩散策略，无需 video rollout 或世界模型微调。
+- **主要结果：** LIBERO 平均成功率 90.6%；RoboTwin 2.0 Easy/Hard 分别达 65.7% / 22.4%，相对零阶 mask prior 消融表明方向信息带来额外增益。
+- **个人贡献：** 负责真机侧系统搭建与部署验证，完成基于真机图像的策略 rollout 定性验证。
 
 
 项目经历
