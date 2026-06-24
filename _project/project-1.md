@@ -1,21 +1,13 @@
 ---
-title: "Adaptive Horizon VLA"
+title: "ELAN4D：Embodiment-centric 4D Supervision for Robust VLA"
 collection: project
 ---
 
-AH-VLA所学习的隐式动作(skill)具备更优的可解释性。尽管其时间尺度可变，预测得到的隐式动作在运动动力学上呈现出高度的自组织特性，在整体轨迹中的功能作用清晰可辨，表明模型成功捕捉到了复杂操作行为的内在结构。
+面向 VLA 策略在相机视角、背景、物体布局等分布外场景中鲁棒性不足的问题，参与构建 embodiment-centric 4D 监督训练框架，通过机器人自身运动轨迹监督增强策略对未来动态的建模能力。
 
-<div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap;">
-  <div style="flex: 1; min-width: 300px;">
-    <h3>技能可视化</h3>
-    <img src="{{ site.baseurl }}/images/skill.png" alt="Skill Image" style="width: 100%; border-radius: 4px;">
-  </div>
-  <div style="flex: 1; min-width: 300px;">
-    <h3>视频效果</h3>
-    <video width="100%" controls style="border-radius: 4px;">
-      <source src="{{ site.baseurl }}/images/skill.mp4" type="video/mp4">
-      您的浏览器不支持视频标签。
-    </video>
-  </div>
-</div>
+### 演示视频
 
+<video width="100%" controls style="border-radius: 4px;">
+  <source src="{{ site.baseurl }}/images/manipulate.mp4" type="video/mp4">
+  您的浏览器不支持视频标签。
+</video>

@@ -1,13 +1,26 @@
 ---
-title: "TurbidPose"
+title: "ICRA AgiBot World Challenge - MoE 方案"
 collection: project
 ---
 
-针对水下场景中常见的散射导致的浑浊、颜色偏移、照度快速变化等域偏移问题，提出一种抗环境干扰的 6自由度(3D 旋转 + 3D 平移)姿态估计方法，支撑水下机器人自主作业的感知需求。
+参加 ICRA AgiBot World Challenge，面向具身智能场景中的机械臂感知、决策与操作任务，设计并实现了基于 MoE（Mixture of Experts）的多专家协同方案，最终取得第五名成绩（Rank 5 / 77）。
 
-### 介绍视频
+- 构建面向复杂操作任务的 MoE 决策框架，将不同专家策略用于处理语义理解、目标定位、动作规划与执行控制等子问题，提升系统在多任务场景下的泛化能力与稳定性。
+- 在挑战赛环境中完成方案验证，最终排名第 5 / 77，体现了方法在真实具身智能任务中的有效性与工程可落地性。
 
-<video width="100%" controls>
-  <source src="{{ site.baseurl }}/images/TurbidPose.mp4" type="video/mp4">
-  您的浏览器不支持视频标签。
-</video>
+<div style="display: flex; gap: 50px; align-items: flex-start; flex-wrap: wrap; justify-content: center;">
+  <div style="flex: 0 0 auto;">
+    <h3>Take wrong item shelf </h3>
+    <video style="height: 160px; width: auto;" controls>
+      <source src="{{ site.baseurl }}/images/Take_wrong_item_shelf.mp4" type="video/mp4">
+      您的浏览器不支持视频标签。
+    </video>
+  </div>
+  <div style="flex: 0 0 auto;">
+    <h3>Hold pot</h3>
+    <video style="height: 160px; width: auto;" controls>
+      <source src="{{ site.baseurl }}/images/hold_pot.mp4" type="video/mp4">
+      您的浏览器不支持视频标签。
+    </video>
+  </div>
+</div>
