@@ -84,6 +84,12 @@ github: [https://github.com/jokeru8](https://github.com/jokeru8)
 ======
 可视化结果：[project](/project/)
 
+### UMI 数据采集与训练推理一体化框架
+
+本项目基于纯 UMI 数据与相对轨迹，搭建了一套可迁移的采集—训练—推理一体化框架，验证了仅用 UMI 数据即可完成有效后训练，并在离散夹爪操作任务上取得可用效果。
+- 以纯 UMI 采集数据驱动策略后训练，动作以相对轨迹表示，提升跨本体迁移能力；打通数据采集、模型训练与在线推理链路，形成可复用的一体化流程。
+- 基于 Pinocchio 完成 IK 运动学求解与规划，将相对末端轨迹映射为可执行关节指令，支撑从示教到关节空间执行的闭环落地。
+
 ### Piper 机械臂 lerobot 框架部署｜[GitHub](https://github.com/jokeru8/piper_lerobot)（50+ stars）
 
 本项目基于 Lerobot 框架在六自由度真实机械臂 Piper 上部署了 Pi0.5、ACT 等算法。代码开源至 GitHub，实现了系统搭建与硬件适配、数据集构建、模型训练与部署全流程。
