@@ -2,29 +2,18 @@
 layout: archive
 title: "Project"
 permalink: /project/
-author_profile: true
+author_profile: false
 ---
 
 {% include base_path %}
 
-<style>
-.archive__item:hover .archive__item-title {
-  text-decoration: none !important;
-}
-</style>
-
+<div class="showcase-stream portfolio-showcase">
 {% for post in site.project %}
-  <div class="archive__item">
-    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-      <h2 class="archive__item-title" itemprop="headline">
-        {{ post.title }}
-      </h2>
-
-      <div class="archive__item-content">
-        {{ post.content }}
-      </div>
-    </article>
-  </div>
-  <hr style="margin: 2em 0;">
+  <article class="showcase-item" itemscope itemtype="http://schema.org/CreativeWork">
+    <h2 class="showcase-item__title" itemprop="headline">{{ post.title }}</h2>
+    <div class="showcase-item__body" itemprop="text">
+      {{ post.content }}
+    </div>
+  </article>
 {% endfor %}
-
+</div>
