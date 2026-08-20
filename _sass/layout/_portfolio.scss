@@ -245,17 +245,21 @@ body.portfolio-showcase #main:not(:has(.sidebar)) {
   }
 }
 
-/* AH-VLA: paired image + video, equal height */
+/* AH-VLA: paired image + video, equal height, side-by-side on desktop */
 .ah-media {
   display: flex;
   gap: 1.25rem;
   align-items: stretch;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin: 0.75rem 0 0.25rem;
+
+  @media (max-width: 640px) {
+    flex-wrap: wrap;
+  }
 }
 
 .ah-media__col {
-  flex: 1 1 280px;
+  flex: 1 1 0;
   display: flex;
   flex-direction: column;
   min-width: 0;
