@@ -8,16 +8,22 @@ redirect_from:
 ---
 
 <div class="portfolio-hero">
-  <p class="hero-line">THU SIGS 硕士</p>
-  <p class="hero-line">研究方向: 具身智能 机械臂 VLA</p>
-  <div class="hero-meta">
-    <a href="mailto:zhoukr25@mails.tsinghua.edu.cn">zhoukr25@mails.tsinghua.edu.cn</a>
-    <a href="https://github.com/jokeru8">GitHub</a>
-    <a href="/project/">Project</a>
+  <div class="hero-identity">
+    <img class="hero-avatar" src="/images/duckyo.jpg" alt="周柯儒" width="120" height="120" fetchpriority="high">
+    <div class="hero-copy">
+      <h1 class="hero-name">周柯儒</h1>
+      <p class="hero-line">THU SIGS 硕士</p>
+      <p class="hero-line">研究方向: 具身智能 机械臂 VLA</p>
+      <div class="hero-meta">
+        <a href="mailto:zhoukr25@mails.tsinghua.edu.cn">zhoukr25@mails.tsinghua.edu.cn</a>
+        <a href="https://github.com/jokeru8">GitHub</a>
+        <a href="/#projects">Project</a>
+      </div>
+    </div>
   </div>
 </div>
 
-<section class="portfolio-section" markdown="1">
+<section id="education" class="portfolio-section" markdown="1">
 
 ## 教育经历
 
@@ -44,7 +50,7 @@ redirect_from:
 
 </section>
 
-<section class="portfolio-section" markdown="1">
+<section id="papers" class="portfolio-section" markdown="1">
 
 ## 论文
 
@@ -90,50 +96,15 @@ redirect_from:
 
 </section>
 
-<section class="portfolio-section" markdown="1">
-
-## 项目经历
-
-<a class="portfolio-cta" href="/project/">可视化结果：project →</a>
-
-<article class="entry-block" markdown="1">
-
-### RealRobot-100：真机 DAgger 训练推理一体化框架
-
-面向真机操作任务，构建 **RealRobot-100** 采集—训练—推理一体化框架：以真机 DAgger 闭环纠偏与异步推理为核心，兼容 UMI 与 ego 视角数据，落地于天机 Marvin 机械臂，目标任务成功率可达 **100%**。
-- 搭建真机 DAgger 框架，支持在线纠偏与迭代数据回流；兼容 UMI 数据格式，在少量 UMI 样本上实现近似后训练效果，同时支持 ego 视角以弥补 UMI 腕部相机全局信息缺失。
-- 实现异步推理平滑，在 action chunk 接缝处无感切换、消除边界卡顿；结合 Pinocchio IK 求解与规划，完成天机 Marvin 真机适配与端到端落地。
-
-</article>
-
-<article class="entry-block" markdown="1">
-
-### Piper 机械臂 lerobot 框架部署｜[GitHub](https://github.com/jokeru8/piper_lerobot)（100+ stars）
-
-本项目基于 Lerobot 框架在六自由度真实机械臂 Piper 上部署了 Pi0.5、ACT 等算法。代码开源至 GitHub，实现了系统搭建与硬件适配、数据集构建、模型训练与部署全流程。
-- 完成机械臂底层控制接口/通信链路适配与运动指令封装，构建统一的动作表示与状态回读机制。实现主从臂数据采集流程，采集包含视觉观测与动作序列的时序数据。
-- 将采集数据用于策略模型 finetune，完成从离线训练到在线推理的部署联调，支持常见桌面操作任务如 pick-and-place 等；采用 RTC 推理架构优化模型推理链路，保障机械臂操作的实时性与动作精准度。
-
-</article>
-
-<article class="entry-block" markdown="1">
-
-### ICRA AgiBot World Challenge｜MoE 具身智能决策方案｜Rank 5 / 77
-
-面向多场景、多步骤具身操作任务，设计并实现基于 MoE 的多专家协同决策框架，提升系统在长流程任务中的泛化能力与稳定性。
-- 针对挑战赛任务中的开放目标、复杂指令与执行不确定性，构建面向任务语义和场景状态的专家调用流程，增强系统在不同操作场景下的鲁棒性。
-- 在 ICRA AgiBot World Challenge 中完成方案验证，最终取得 Rank 5 / 77，体现了方法在具身智能任务中的有效性与工程落地能力。
-
-</article>
-
-<article class="entry-block" markdown="1">
-
-### 基于 OpenClaw 的长程大小脑智能体架构机械臂
-
-将真实机械臂接入 OpenClaw 框架，将复杂任务拆解为语义理解、目标定位、动作规划与执行控制等子模块，构建从自然语言任务理解到机械臂的感知-决策-执行闭环，提升系统在长流程任务中的泛化能力与稳定性。
-- 集成 SAM3、VGGT 等实时感知模块，并结合 Qwen3.5、DeepSeek 等多模态理解与推理模型，实现语义指令下的目标识别、任务分解、动作规划与执行控制。
-- 在当前测试任务中实现 100% 语义理解抓取成功率，并支持高精度空间操作，验证了智能体驱动机械臂在开放式桌面操作场景中的可行性。
-
-</article>
-
+<section id="projects" class="portfolio-section portfolio-section--media">
+  <h2>项目经历</h2>
+  {% assign projects = site.project | sort: "path" %}
+  {% for post in projects %}
+  <article class="showcase-item entry-block entry-block--media" id="{{ post.slug }}">
+    <h3 class="showcase-item__title">{{ post.title }}</h3>
+    <div class="showcase-item__body">
+      {{ post.content }}
+    </div>
+  </article>
+  {% endfor %}
 </section>

@@ -14,8 +14,11 @@ main:
   #- title: "Talks"
   #  url: /talks/    
 
-  - title: "Project"
-    url: /project/    
+  - title: "论文"
+    url: /#papers
+
+  - title: "项目"
+    url: /#projects
     
   #- title: "Portfolio"
   #  url: /portfolio/
