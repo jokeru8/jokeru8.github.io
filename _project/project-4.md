@@ -10,7 +10,7 @@ collection: project
 
 ### 演示视频
 
-<video width="100%" controls preload="none" playsinline>
+<video width="100%" controls preload="none" playsinline poster="{{ site.baseurl }}/images/cups_web_poster.jpg">
   <source data-src="{{ site.baseurl }}/images/cups_web.mp4" type="video/mp4">
   您的浏览器不支持视频标签。
 </video>

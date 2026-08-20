@@ -64,7 +64,7 @@ redirect_from:
 
 ### 演示视频
 
-<video width="100%" controls preload="none" playsinline style="border-radius: 4px;">
+<video width="100%" controls preload="none" playsinline poster="{{ site.baseurl }}/images/manipulate_web_poster.jpg" style="border-radius: 4px;">
   <source data-src="{{ site.baseurl }}/images/manipulate_web.mp4" type="video/mp4">
   您的浏览器不支持视频标签。
 </video>
@@ -96,7 +96,7 @@ redirect_from:
   </div>
   <div style="flex: 1; min-width: 300px;">
     <h3>视频效果</h3>
-    <video width="100%" controls preload="none" playsinline style="border-radius: 4px;">
+    <video width="100%" controls preload="none" playsinline poster="{{ site.baseurl }}/images/skill_web_poster.jpg" style="border-radius: 4px;">
       <source data-src="{{ site.baseurl }}/images/skill_web.mp4" type="video/mp4">
       您的浏览器不支持视频标签。
     </video>
@@ -115,7 +115,7 @@ redirect_from:
 
 ### 介绍视频
 
-<video width="100%" controls preload="none" playsinline style="border-radius: 4px;">
+<video width="100%" controls preload="none" playsinline poster="{{ site.baseurl }}/images/TurbidPose_web_poster.jpg" style="border-radius: 4px;">
   <source data-src="{{ site.baseurl }}/images/TurbidPose_web.mp4" type="video/mp4">
   您的浏览器不支持视频标签。
 </video>

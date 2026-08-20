@@ -231,6 +231,8 @@ body.portfolio-showcase #main:not(:has(.sidebar)) {
     width: 100%;
     max-width: 100%;
     height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
     margin: 0.75rem 0 0.25rem;
     border-radius: 2px;
     background: #0f1720;
@@ -357,6 +359,8 @@ body.portfolio-showcase #main:not(:has(.sidebar)) {
       width: 100%;
       max-width: 100%;
       height: auto;
+      aspect-ratio: 16 / 9;
+      object-fit: contain;
       margin: 0.5rem 0 0.75rem;
       border-radius: 2px;
       background: #0f1720;
@@ -366,6 +370,12 @@ body.portfolio-showcase #main:not(:has(.sidebar)) {
         opacity: 0.96;
         box-shadow: 0 8px 28px rgba(27, 58, 75, 0.12);
       }
+    }
+
+    video[style*="height"] {
+      aspect-ratio: auto;
+      width: auto;
+      max-height: 240px;
     }
 
     img {
