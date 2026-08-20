@@ -84,13 +84,13 @@ github: [https://github.com/jokeru8](https://github.com/jokeru8)
 ======
 可视化结果：[project](/project/)
 
-### UMI 数据采集与训练推理一体化框架
+### RealRobot-100：真机 DAgger 训练推理一体化框架
 
-本项目基于纯 UMI 数据与相对轨迹，搭建了一套可迁移的采集—训练—推理一体化框架，验证了仅用 UMI 数据即可完成有效后训练，并在离散夹爪操作任务上取得可用效果。
-- 以纯 UMI 采集数据驱动策略后训练，动作以相对轨迹表示，提升跨本体迁移能力；打通数据采集、模型训练与在线推理链路，形成可复用的一体化流程。
-- 基于 Pinocchio 完成 IK 运动学求解与规划，将相对末端轨迹映射为可执行关节指令，支撑从示教到关节空间执行的闭环落地。
+面向真机操作任务，构建 **RealRobot-100** 采集—训练—推理一体化框架：以真机 DAgger 闭环纠偏与异步推理为核心，兼容 UMI 与 ego 视角数据，落地于天机 Marvin 机械臂，目标任务成功率可达 **100%**。
+- 搭建真机 DAgger 框架，支持在线纠偏与迭代数据回流；兼容 UMI 数据格式，在少量 UMI 样本上实现近似后训练效果，同时支持 ego 视角以弥补 UMI 腕部相机全局信息缺失。
+- 实现异步推理平滑，在 action chunk 接缝处无感切换、消除边界卡顿；结合 Pinocchio IK 求解与规划，完成天机 Marvin 真机适配与端到端落地。
 
-### Piper 机械臂 lerobot 框架部署｜[GitHub](https://github.com/jokeru8/piper_lerobot)（50+ stars）
+### Piper 机械臂 lerobot 框架部署｜[GitHub](https://github.com/jokeru8/piper_lerobot)（100+ stars）
 
 本项目基于 Lerobot 框架在六自由度真实机械臂 Piper 上部署了 Pi0.5、ACT 等算法。代码开源至 GitHub，实现了系统搭建与硬件适配、数据集构建、模型训练与部署全流程。
 - 完成机械臂底层控制接口/通信链路适配与运动指令封装，构建统一的动作表示与状态回读机制。实现主从臂数据采集流程，采集包含视觉观测与动作序列的时序数据。
