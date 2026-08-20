@@ -10,16 +10,16 @@ collection: project
 - 实现异步推理平滑：在 action chunk 接缝处无感切换，消除 chunk 边界卡顿，保障长程执行连贯性。
 - 基于 Pinocchio 完成 IK 运动学求解与规划，并将框架适配天机 Marvin 真机，形成可复用的端到端落地闭环。
 
-### UMI 离散夹爪
-
-<video width="100%" controls preload="none" playsinline style="border-radius: 4px;">
-  <source data-src="{{ site.baseurl }}/images/纯umi离散夹爪.mp4" type="video/mp4">
-  您的浏览器不支持视频标签。
-</video>
-
-### 异步推理平滑
+### 平滑推理
 
 <video width="100%" controls preload="none" playsinline style="border-radius: 4px;">
   <source data-src="{{ site.baseurl }}/images/arrange_async_infer.mp4" type="video/mp4">
+  您的浏览器不支持视频标签。
+</video>
+
+### 纯UMI后训练
+
+<video width="100%" controls preload="none" playsinline style="border-radius: 4px;">
+  <source data-src="{{ site.baseurl }}/images/纯umi离散夹爪.mp4" type="video/mp4">
   您的浏览器不支持视频标签。
 </video>
