@@ -14,36 +14,52 @@
   var activated = new WeakSet();
   var running = false;
 
+  function isInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    return rect.bottom > 0 && rect.top < vh;
+  }
+
+  function loadOnePoster(url) {
+    return new Promise(function (resolve) {
+      var img = new Image();
+      var done = false;
+      function finish() {
+        if (done) return;
+        done = true;
+        resolve();
+      }
+      img.onload = finish;
+      img.onerror = finish;
+      setTimeout(finish, 5000);
+      img.src = url;
+    });
+  }
+
   function preloadPosters() {
     var urls = [];
-    videos.forEach(function (video) {
+    var startIndex = 0;
+    for (var i = 0; i < videos.length; i++) {
+      if (isInViewport(videos[i])) {
+        startIndex = i;
+        break;
+      }
+    }
+
+    // Prefer viewport-first order, then the rest above (so visible covers finish first)
+    var ordered = videos.slice(startIndex).concat(videos.slice(0, startIndex));
+    ordered.forEach(function (video) {
       var poster = video.getAttribute("poster");
       if (poster && urls.indexOf(poster) === -1) urls.push(poster);
     });
 
     if (!urls.length) return Promise.resolve();
 
-    return Promise.race([
-      Promise.all(
-        urls.map(function (url) {
-          return new Promise(function (resolve) {
-            var img = new Image();
-            img.onload = resolve;
-            img.onerror = resolve;
-            img.src = url;
-          });
-        })
-      ),
-      new Promise(function (resolve) {
-        setTimeout(resolve, 3000);
-      })
-    ]);
-  }
-
-  function isInViewport(el) {
-    var rect = el.getBoundingClientRect();
-    var vh = window.innerHeight || document.documentElement.clientHeight;
-    return rect.bottom > 0 && rect.top < vh;
+    return urls.reduce(function (chain, url) {
+      return chain.then(function () {
+        return loadOnePoster(url);
+      });
+    }, Promise.resolve());
   }
 
   function activate(video) {
