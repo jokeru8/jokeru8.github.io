@@ -13,7 +13,7 @@ redirect_from:
     <div class="hero-copy">
       <h1 class="hero-name">周柯儒</h1>
       <p class="hero-line">THU SIGS 硕士</p>
-      <p class="hero-line">研究方向: 具身智能 机械臂 VLA</p>
+      <p class="hero-line">研究方向: 具身智能 机械臂操作 真机后训练</p>
       <div class="hero-meta">
         <a href="mailto:zhoukr25@mails.tsinghua.edu.cn">zhoukr25@mails.tsinghua.edu.cn</a>
         <a href="https://github.com/jokeru8">GitHub</a>
