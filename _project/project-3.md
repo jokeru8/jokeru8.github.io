@@ -11,15 +11,15 @@ collection: project
 <div style="display: flex; gap: 50px; align-items: flex-start; flex-wrap: wrap; justify-content: center;">
   <div style="flex: 0 0 auto;">
     <h3>Take wrong item shelf </h3>
-    <video style="height: 160px; width: auto;" controls>
-      <source src="{{ site.baseurl }}/images/Take_wrong_item_shelf.mp4" type="video/mp4">
+    <video style="height: 160px; width: auto;" controls preload="none" playsinline>
+      <source data-src="{{ site.baseurl }}/images/Take_wrong_item_shelf.mp4" type="video/mp4">
       您的浏览器不支持视频标签。
     </video>
   </div>
   <div style="flex: 0 0 auto;">
     <h3>Hold pot</h3>
-    <video style="height: 160px; width: auto;" controls>
-      <source src="{{ site.baseurl }}/images/hold_pot.mp4" type="video/mp4">
+    <video style="height: 160px; width: auto;" controls preload="none" playsinline>
+      <source data-src="{{ site.baseurl }}/images/hold_pot.mp4" type="video/mp4">
       您的浏览器不支持视频标签。
     </video>
   </div>

@@ -1,5 +1,7 @@
 <!-- start custom footer snippets -->
 
+{% include base_path %}
+
 <!--a href="/sitemap/">Sitemap</a-->
 
 <!-- Support for MatJax -->
@@ -12,5 +14,7 @@
     mermaid.initialize({startOnLoad:true, theme:'default'});
     await mermaid.run({querySelector:'code.language-mermaid'});
 </script>
+
+<script defer src="{{ base_path }}/assets/js/lazy-video.js"></script>
 
 <!-- end custom footer snippets -->

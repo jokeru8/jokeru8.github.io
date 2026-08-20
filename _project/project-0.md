@@ -12,14 +12,14 @@ collection: project
 
 ### UMI 离散夹爪
 
-<video width="100%" controls style="border-radius: 4px;">
-  <source src="{{ site.baseurl }}/images/纯umi离散夹爪.mp4" type="video/mp4">
+<video width="100%" controls preload="none" playsinline style="border-radius: 4px;">
+  <source data-src="{{ site.baseurl }}/images/纯umi离散夹爪.mp4" type="video/mp4">
   您的浏览器不支持视频标签。
 </video>
 
 ### 异步推理平滑
 
-<video width="100%" controls style="border-radius: 4px;">
-  <source src="{{ site.baseurl }}/images/arrange_async_infer.mp4" type="video/mp4">
+<video width="100%" controls preload="none" playsinline style="border-radius: 4px;">
+  <source data-src="{{ site.baseurl }}/images/arrange_async_infer.mp4" type="video/mp4">
   您的浏览器不支持视频标签。
 </video>
