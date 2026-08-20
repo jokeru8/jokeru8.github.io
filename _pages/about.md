@@ -9,7 +9,7 @@ redirect_from:
 
 <div class="portfolio-hero">
   <div class="hero-identity">
-    <img class="hero-avatar" src="/images/duckyo.jpg" alt="周柯儒" width="120" height="120" fetchpriority="high">
+    <img class="hero-avatar" src="/images/duckyo_web.jpg" alt="周柯儒" width="120" height="120" fetchpriority="high">
     <div class="hero-copy">
       <h1 class="hero-name">周柯儒</h1>
       <p class="hero-line">THU SIGS 硕士</p>
@@ -65,7 +65,7 @@ redirect_from:
 ### 演示视频
 
 <video width="100%" controls preload="none" playsinline style="border-radius: 4px;">
-  <source data-src="{{ site.baseurl }}/images/manipulate.mp4" type="video/mp4">
+  <source data-src="{{ site.baseurl }}/images/manipulate_web.mp4" type="video/mp4">
   您的浏览器不支持视频标签。
 </video>
 
@@ -92,12 +92,12 @@ redirect_from:
 <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap;">
   <div style="flex: 1; min-width: 300px;">
     <h3>技能可视化</h3>
-    <img src="{{ site.baseurl }}/images/skill.png" alt="Skill Image" style="width: 100%; border-radius: 4px;" loading="lazy">
+    <img src="{{ site.baseurl }}/images/skill_web.jpg" alt="Skill Image" style="width: 100%; border-radius: 4px;" loading="lazy">
   </div>
   <div style="flex: 1; min-width: 300px;">
     <h3>视频效果</h3>
     <video width="100%" controls preload="none" playsinline style="border-radius: 4px;">
-      <source data-src="{{ site.baseurl }}/images/skill.mp4" type="video/mp4">
+      <source data-src="{{ site.baseurl }}/images/skill_web.mp4" type="video/mp4">
       您的浏览器不支持视频标签。
     </video>
   </div>
@@ -116,7 +116,7 @@ redirect_from:
 ### 介绍视频
 
 <video width="100%" controls preload="none" playsinline style="border-radius: 4px;">
-  <source data-src="{{ site.baseurl }}/images/TurbidPose.mp4" type="video/mp4">
+  <source data-src="{{ site.baseurl }}/images/TurbidPose_web.mp4" type="video/mp4">
   您的浏览器不支持视频标签。
 </video>
 

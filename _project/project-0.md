@@ -13,13 +13,13 @@ collection: project
 ### 平滑推理
 
 <video width="100%" controls preload="none" playsinline style="border-radius: 4px;">
-  <source data-src="{{ site.baseurl }}/images/arrange_async_infer.mp4" type="video/mp4">
+  <source data-src="{{ site.baseurl }}/images/arrange_async_infer_web.mp4" type="video/mp4">
   您的浏览器不支持视频标签。
 </video>
 
 ### 纯UMI后训练
 
 <video width="100%" controls preload="none" playsinline style="border-radius: 4px;">
-  <source data-src="{{ site.baseurl }}/images/纯umi离散夹爪.mp4" type="video/mp4">
+  <source data-src="{{ site.baseurl }}/images/纯umi离散夹爪_web.mp4" type="video/mp4">
   您的浏览器不支持视频标签。
 </video>
