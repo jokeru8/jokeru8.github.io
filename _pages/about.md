@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "周柯儒"
+title: "周柯儒 个人主页"
 author_profile: false
 redirect_from: 
   - /about/
@@ -50,7 +50,7 @@ redirect_from:
 
 </section>
 
-<section id="papers" class="portfolio-section" markdown="1">
+<section id="papers" class="portfolio-section portfolio-section--media" markdown="1">
 
 ## 论文
 
@@ -61,6 +61,13 @@ redirect_from:
 面向 VLA 策略在相机视角、背景、物体布局等分布外场景中鲁棒性不足的问题，参与构建 embodiment-centric 4D 监督训练框架，通过机器人自身运动轨迹监督增强策略对未来动态的建模能力。
 - 利用 URDF 与关节角正运动学自动生成机器人关键点 4D 轨迹，作为无需外部 tracker 或场景重建的紧凑监督信号；通过 ControlNet 风格轻量 track decoder 注入 4D 信息，并采用梯度隔离保护预训练 VLM 表征。
 - 负责 AgileX Piper 机械臂真机部署与评估，设计并完成视觉鲁棒性、空间泛化、长时序推理三类真实任务验证；方法在 LIBERO、LIBERO-Plus、RoboTwin 2.0 及真机任务中均优于强 VLA baseline，OOD 扰动下提升尤为显著。
+
+### 演示视频
+
+<video width="100%" controls preload="none" playsinline style="border-radius: 4px;">
+  <source data-src="{{ site.baseurl }}/images/manipulate.mp4" type="video/mp4">
+  您的浏览器不支持视频标签。
+</video>
 
 </article>
 
@@ -82,6 +89,20 @@ redirect_from:
 - 提出自适应时域 VLA (AH VLA) 框架。该方法结合动作量化与字节对编码（BPE），将动作量化编码并进行分词，学习具有可变时域长度的隐式动作。在推理阶段，主干网络预测这些隐式动作，再由动作头将其解码为可执行的控制序列。
 - AH VLA 所学习的隐式动作具备更优的可解释性。尽管其时间尺度可变，预测得到的隐式动作在运动动力学上呈现出高度的自组织特性，在整体轨迹中的功能作用清晰可辨，表明模型成功捕捉到了复杂操作行为的内在结构。
 
+<div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 300px;">
+    <h3>技能可视化</h3>
+    <img src="{{ site.baseurl }}/images/skill.png" alt="Skill Image" style="width: 100%; border-radius: 4px;" loading="lazy">
+  </div>
+  <div style="flex: 1; min-width: 300px;">
+    <h3>视频效果</h3>
+    <video width="100%" controls preload="none" playsinline style="border-radius: 4px;">
+      <source data-src="{{ site.baseurl }}/images/skill.mp4" type="video/mp4">
+      您的浏览器不支持视频标签。
+    </video>
+  </div>
+</div>
+
 </article>
 
 <article class="entry-block" markdown="1">
@@ -91,6 +112,13 @@ redirect_from:
 针对水下场景中常见的散射导致的浑浊、颜色偏移、照度快速变化等域偏移问题，提出一种抗环境干扰的 6 自由度（3D 旋转 + 3D 平移）位姿估计方法，支撑水下机器人自主作业的感知需求。
 - 在自注意力层中引入特征注入机制，通过程度显式可控的风格迁移实现一种风格噪声可控的数据增强，生成具有高真实感且保留关键特征的合成训练样本，从而系统性提升模型对浑浊、照明变化的适应能力。
 - 提出一种基于预训练变分自编码器（VAE）的抗干扰特征提取模块，通过潜空间特征引导位姿估计器学习更稳定的环境不变表征，增强其在不同水下条件下的适应性，降低噪声与成像退化对位姿估计的影响。
+
+### 介绍视频
+
+<video width="100%" controls preload="none" playsinline style="border-radius: 4px;">
+  <source data-src="{{ site.baseurl }}/images/TurbidPose.mp4" type="video/mp4">
+  您的浏览器不支持视频标签。
+</video>
 
 </article>
 

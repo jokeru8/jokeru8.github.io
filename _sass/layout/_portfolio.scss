@@ -225,6 +225,22 @@ body.portfolio-showcase #main:not(:has(.sidebar)) {
       color: var(--global-text-color);
     }
   }
+
+  video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0.75rem 0 0.25rem;
+    border-radius: 2px;
+    background: #0f1720;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 2px;
+  }
 }
 
 .portfolio-cta {
