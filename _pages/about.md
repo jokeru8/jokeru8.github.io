@@ -89,14 +89,14 @@ redirect_from:
 - 提出自适应时域 VLA (AH VLA) 框架。该方法结合动作量化与字节对编码（BPE），将动作量化编码并进行分词，学习具有可变时域长度的隐式动作。在推理阶段，主干网络预测这些隐式动作，再由动作头将其解码为可执行的控制序列。
 - AH VLA 所学习的隐式动作具备更优的可解释性。尽管其时间尺度可变，预测得到的隐式动作在运动动力学上呈现出高度的自组织特性，在整体轨迹中的功能作用清晰可辨，表明模型成功捕捉到了复杂操作行为的内在结构。
 
-<div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap;">
-  <div style="flex: 1; min-width: 300px;">
+<div class="ah-media">
+  <div class="ah-media__col">
     <h3>技能可视化</h3>
-    <img src="{{ site.baseurl }}/images/skill_web.jpg" alt="Skill Image" style="width: 100%; border-radius: 4px;" loading="lazy">
+    <img src="{{ site.baseurl }}/images/skill_web.jpg" alt="Skill Image" class="ah-media__item" loading="lazy">
   </div>
-  <div style="flex: 1; min-width: 300px;">
+  <div class="ah-media__col">
     <h3>视频效果</h3>
-    <video width="100%" controls preload="none" playsinline poster="{{ site.baseurl }}/images/skill_web_poster.jpg" style="border-radius: 4px;">
+    <video class="ah-media__item" controls preload="none" playsinline poster="{{ site.baseurl }}/images/skill_web_poster.jpg">
       <source data-src="{{ site.baseurl }}/images/skill_web.mp4" type="video/mp4">
       您的浏览器不支持视频标签。
     </video>
