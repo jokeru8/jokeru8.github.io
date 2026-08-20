@@ -280,8 +280,8 @@ body.portfolio-showcase #main:not(:has(.sidebar)) {
 .ah-media__item {
   display: block;
   width: 100%;
-  height: 240px;
-  max-height: 240px;
+  height: 480px;
+  max-height: 480px;
   object-fit: contain;
   background: #0f1720;
   border-radius: 4px;
@@ -291,7 +291,7 @@ body.portfolio-showcase #main:not(:has(.sidebar)) {
 
 .entry-block video.ah-media__item {
   aspect-ratio: auto;
-  height: 240px;
+  height: 480px;
   max-width: 100%;
 }
 
