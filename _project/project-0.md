@@ -12,8 +12,8 @@ collection: project
 
 ### 平滑推理
 
-<video width="100%" controls preload="none" playsinline poster="{{ site.baseurl }}/images/arrange_async_infer_web_poster.jpg" style="border-radius: 4px;">
-  <source data-src="{{ site.baseurl }}/images/arrange_async_infer_web.mp4" type="video/mp4">
+<video width="100%" controls preload="none" playsinline poster="{{ site.baseurl }}/images/arrange_continuous_web_poster.jpg" style="border-radius: 4px;">
+  <source data-src="{{ site.baseurl }}/images/arrange_continuous_web.mp4" type="video/mp4">
   您的浏览器不支持视频标签。
 </video>
 
