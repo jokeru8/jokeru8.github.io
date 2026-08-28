@@ -89,6 +89,15 @@ redirect_from:
 - 基于冻结 Wan 2.2 视频世界模型，在单次前向中读取 latent velocity 并构建 Kinematic Affordance Map，同时编码交互区域与粗粒度运动方向；使用 Perceiver 将 KAM 压缩为 8 个 tokens，用于条件化扩散策略，无需 video rollout 或世界模型微调。
 - 负责真机侧系统搭建与部署验证，完成基于真实机械臂观测图像的策略 rollout 定性评估；方法在 LIBERO 上平均成功率达 90.6%，RoboTwin 2.0 Easy / Hard 分别达 65.7% / 22.4%。
 
+<div style="display: flex; gap: 24px; align-items: flex-start; flex-wrap: wrap; width: 100%;">
+  <div style="flex: 1; min-width: 280px;">
+    <img src="{{ site.baseurl }}/images/KAM_frame.png" alt="KAM frame" style="width: 100%; border-radius: 4px;" loading="lazy">
+  </div>
+  <div style="flex: 1; min-width: 280px;">
+    <img src="{{ site.baseurl }}/images/KAM.png" alt="KAM" style="width: 100%; border-radius: 4px;" loading="lazy">
+  </div>
+</div>
+
 </article>
 
 <article class="entry-block" markdown="1">
