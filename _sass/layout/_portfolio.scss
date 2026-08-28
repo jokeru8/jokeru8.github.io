@@ -170,9 +170,9 @@ body.portfolio-showcase #main:not(:has(.sidebar)) {
   > h2,
   .portfolio-section__title {
     font-family: $portfolio-serif;
-    font-size: 5.4rem;
-    font-weight: 600;
-    color: $portfolio-accent;
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: #0a1520;
     margin: 0 0 1.25rem;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid var(--global-border-color);
@@ -463,9 +463,9 @@ body.portfolio-showcase #main:not(:has(.sidebar)) {
 .portfolio-section--media {
   > h2 {
     font-family: $portfolio-serif;
-    font-size: 5.4rem;
-    font-weight: 600;
-    color: $portfolio-accent;
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: #0a1520;
     margin: 0 0 1.25rem;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid var(--global-border-color);
@@ -475,11 +475,15 @@ body.portfolio-showcase #main:not(:has(.sidebar)) {
 
 html[data-theme="dark"] {
   .page__title,
-  .portfolio-section > h2,
   .entry-block > h3,
   .showcase-item__title,
   .portfolio-hero .hero-name {
     color: #e8eef2;
+  }
+
+  .portfolio-section > h2,
+  .portfolio-section--media > h2 {
+    color: #ffffff;
   }
 
   .portfolio-hero .hero-avatar {
@@ -629,7 +633,7 @@ html[data-theme="dark"] {
 
     > h2,
     .portfolio-section__title {
-      font-size: 6rem;
+      font-size: 3rem;
       margin-bottom: 1.1rem;
     }
   }
