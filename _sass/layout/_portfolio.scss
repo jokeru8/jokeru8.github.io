@@ -170,7 +170,7 @@ body.portfolio-showcase #main:not(:has(.sidebar)) {
   > h2,
   .portfolio-section__title {
     font-family: $portfolio-serif;
-    font-size: 2.7rem;
+    font-size: 5.4rem;
     font-weight: 600;
     color: $portfolio-accent;
     margin: 0 0 1.25rem;
@@ -463,7 +463,7 @@ body.portfolio-showcase #main:not(:has(.sidebar)) {
 .portfolio-section--media {
   > h2 {
     font-family: $portfolio-serif;
-    font-size: 2.7rem;
+    font-size: 5.4rem;
     font-weight: 600;
     color: $portfolio-accent;
     margin: 0 0 1.25rem;
@@ -629,7 +629,7 @@ html[data-theme="dark"] {
 
     > h2,
     .portfolio-section__title {
-      font-size: 3rem;
+      font-size: 6rem;
       margin-bottom: 1.1rem;
     }
   }
