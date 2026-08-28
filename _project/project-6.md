@@ -12,16 +12,16 @@ collection: project
 
 <div style="display: flex; gap: 50px; align-items: flex-start; flex-wrap: wrap; justify-content: center;">
   <div style="flex: 0 0 auto;">
-    <h3>Pi05</h3>
-    <video style="height: 240px; width: auto;" controls preload="none" playsinline poster="{{ site.baseurl }}/images/pi05_pick_and_place_web_poster.jpg">
-      <source data-src="{{ site.baseurl }}/images/pi05_pick_and_place_web.mp4" type="video/mp4">
+    <h3>长程任务：物体连续操作</h3>
+    <video style="height: 240px; width: auto;" controls preload="none" playsinline poster="{{ site.baseurl }}/images/拉抽屉长程_web_poster.jpg">
+      <source data-src="{{ site.baseurl }}/images/拉抽屉长程_web.mp4" type="video/mp4">
       您的浏览器不支持视频标签。
     </video>
   </div>
   <div style="flex: 0 0 auto;">
-    <h3>Act</h3>
-    <video style="height: 240px; width: auto;" controls preload="none" playsinline poster="{{ site.baseurl }}/images/pick_and_place_web_poster.jpg">
-      <source data-src="{{ site.baseurl }}/images/pick_and_place_web.mp4" type="video/mp4">
+    <h3>双臂操作</h3>
+    <video style="height: 240px; width: auto;" controls preload="none" playsinline poster="{{ site.baseurl }}/images/双臂操作_web_poster.jpg">
+      <source data-src="{{ site.baseurl }}/images/双臂操作_web.mp4" type="video/mp4">
       您的浏览器不支持视频标签。
     </video>
   </div>
