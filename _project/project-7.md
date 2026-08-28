@@ -11,13 +11,8 @@ collection: project
 - 标注阶段只读源数据，支持 episode 级可恢复批处理；通过 `convert` / `validate` 安全发布到新 LeRobot 数据集。
 - 同时支持 `complete` 与 `dagger_patch` 两种模式，可覆盖完整任务轨迹与 DAgger 中途修正数据。
 
-<div style="display: flex; gap: 50px; align-items: flex-start; flex-wrap: wrap; justify-content: center;">
-  <div style="flex: 1; min-width: 300px;">
-    <h3>复核台</h3>
-    <img src="{{ site.baseurl }}/images/robo_annotate_review_console.webp" alt="Robo-annotate 多相机复核台" style="width: 100%; border-radius: 4px;">
-  </div>
-  <div style="flex: 1; min-width: 300px;">
-    <h3>标注效果</h3>
-    <img src="{{ site.baseurl }}/images/robo_annotate_annotation_result.webp" alt="Robo-annotate 子任务边界标注效果" style="width: 100%; border-radius: 4px;">
-  </div>
-</div>
+<h3>复核台</h3>
+<img src="{{ site.baseurl }}/images/robo_annotate_review_console.webp" alt="Robo-annotate 多相机复核台" style="width: 100%; border-radius: 4px;">
+
+<h3>标注效果</h3>
+<img src="{{ site.baseurl }}/images/robo_annotate_annotation_result.webp" alt="Robo-annotate 子任务边界标注效果" style="width: 100%; border-radius: 4px;">
