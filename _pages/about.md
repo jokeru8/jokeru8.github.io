@@ -54,12 +54,12 @@ redirect_from:
 
 ## 实习经历
 
-<table class="education-table">
+<table class="education-table internship-table">
   <colgroup>
-    <col style="width: 13rem">
-    <col style="width: 11rem">
-    <col style="width: 12rem">
-    <col style="width: 22rem">
+    <col style="width: 8.5rem">
+    <col style="width: 6.5rem">
+    <col style="width: 15rem">
+    <col>
   </colgroup>
   <tr>
     <td>2026.3-2026.6</td>
