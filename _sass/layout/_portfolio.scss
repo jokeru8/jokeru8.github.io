@@ -336,15 +336,16 @@ body.portfolio-showcase #main:not(:has(.sidebar)) {
 }
 
 #internship .internship-table {
-  width: 100% !important;
-  table-layout: fixed;
+  width: auto !important;
+  table-layout: auto;
 
   td {
-    padding-right: 0.85em;
+    padding-right: 1.5em;
+    white-space: nowrap;
   }
 
-  tr td:nth-child(3) {
-    white-space: nowrap;
+  tr td:last-child {
+    padding-right: 0;
   }
 }
 
