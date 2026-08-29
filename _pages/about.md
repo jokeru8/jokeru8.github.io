@@ -50,6 +50,33 @@ redirect_from:
 
 </section>
 
+<section id="internship" class="portfolio-section" markdown="1">
+
+## 实习经历
+
+<table class="education-table">
+  <colgroup>
+    <col style="width: 13rem">
+    <col style="width: 11rem">
+    <col style="width: 12rem">
+    <col style="width: 22rem">
+  </colgroup>
+  <tr>
+    <td>2026.3-2026.6</td>
+    <td>iData研究院</td>
+    <td>具身算法实习生</td>
+    <td>参加 ICRA AgiBot World Challenge，Rank <strong>5 / 77</strong></td>
+  </tr>
+  <tr>
+    <td>2026.6-2026.9</td>
+    <td>SotaBot</td>
+    <td>世界模型算法实习生</td>
+    <td>负责 π0.7 框架搭建以及完整的真机后训练部署</td>
+  </tr>
+</table>
+
+</section>
+
 <section id="papers" class="portfolio-section portfolio-section--media" markdown="1">
 
 ## 论文

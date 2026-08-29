@@ -17,6 +17,9 @@ main:
   - title: "论文"
     url: /#papers
 
+  - title: "实习"
+    url: /#internship
+
   - title: "项目"
     url: /#projects
     
