@@ -96,11 +96,10 @@ redirect_from:
 
 ### EMERGE-Policy: A Robot Mind Emerges Beyond a Single Policy
 
-- 参与提出并实现图结构 Agentic Policy 编排框架，将机器人智能从单一控制策略扩展为 Main Agent、角色化 Sub Agents、异构 Skills 与外部记忆协同形成的系统级策略。
-- 建立统一的功能型 Skill 接口，将 VLA、World Model、Verifier 和运动原语分别抽象为 Operational、Imagination 与 Evaluation Skills，实现不同模型和控制后端的即插即用式组合。
-- 设计分层上下文与 Token-Aware 记忆机制，由 Perception、Verification、Monitor Sub Agents 在隔离上下文中异步处理密集信息，仅向 Main Agent 返回任务相关的结构化证据，提升长程推理的可扩展性与可审计性。
-- 将 subgoal 统一表示为 &lt;Target, Change, Criterion&gt;，结合执行后验证、文本故障诊断与 Branch Stack 局部恢复机制，使机器人能够在局部失败后修正动作并返回原任务，避免频繁全局重规划。
-- 引入基于 World Model 的「想象—评估—执行」闭环：生成候选动作及未来状态，由 Evaluation Skill 根据目标完成判据评分，在实际执行前筛除高风险动作。
+面向端到端方法难以处理长程任务的问题，建立统一的功能型 Skill 接口。
+- 将 VLA、World Model、Verifier 和运动原语分别抽象为 Operational、Imagination 与 Evaluation Skills，实现不同模型和控制后端的即插即用式组合。
+- 设计分层上下文与 Token-Aware 记忆机制，由 Perception、Verification、Monitor Sub Agents 在隔离上下文中异步处理密集信息。
+- 引入基于 World Model 的「想象—评估—执行」技能闭环，生成并评估候选动作及未来状态，在各个 benchmark 上取得最好效果。
 
 <img src="{{ site.baseurl }}/images/EMERGE-policy.png" alt="EMERGE-Policy 框架示意图" style="width: 100%; border-radius: 4px;" loading="lazy">
 
@@ -139,7 +138,7 @@ redirect_from:
 
 <article class="entry-block" markdown="1">
 
-### Adaptive Horizon VLA - 自适应学习可变动作块 VLA｜ECCV 2026 在投
+### Adaptive Horizon VLA - 自适应学习可变动作块 VLA｜ICRA 待投
 
 当前的 VLA 模型通常由 VLM 与一个策略动作头组成，两个模块之间通过隐式动作等中间变量进行信息交互。动作块与隐式动作通常采用固定长度，其长度往往由数据特征和人工设计决定，与类人行为的功能语义并不一致。
 - 提出自适应时域 VLA (AH VLA) 框架。该方法结合动作量化与字节对编码（BPE），将动作量化编码并进行分词，学习具有可变时域长度的隐式动作。在推理阶段，主干网络预测这些隐式动作，再由动作头将其解码为可执行的控制序列。
