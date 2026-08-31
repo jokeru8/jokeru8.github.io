@@ -85,8 +85,8 @@ redirect_from:
 
 ### 演示视频
 
-<video width="100%" controls preload="none" playsinline style="border-radius: 4px;">
-  <source data-src="{{ site.baseurl }}/images/sota-wla.mp4" type="video/mp4">
+<video width="100%" controls preload="none" playsinline poster="{{ site.baseurl }}/images/sota-wla_web_poster.jpg" style="border-radius: 4px;">
+  <source data-src="{{ site.baseurl }}/images/sota-wla_web.mp4" type="video/mp4">
   您的浏览器不支持视频标签。
 </video>
 
