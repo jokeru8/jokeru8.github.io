@@ -1,26 +1,16 @@
 ---
-title: "ICRA AgiBot World Challenge-irobot"
+title: "OpenClaw 智能体机械臂系统接入"
 collection: project
 ---
 
-参加 ICRA AgiBot World Challenge-irobot，面向具身智能场景中的机械臂感知、决策与操作任务，设计并实现了基于 MoE（Mixture of Experts）的多专家协同决策方案，最终取得第五名成绩（Rank **5 / 77**）。
+将真实机械臂接入 OpenClaw 框架，构建了基于智能体大脑的感知、决策、执行一体化系统，实现从自然语言任务理解到机械臂空间操作的闭环控制。
 
-- 构建面向复杂操作任务的 MoE 决策框架，将不同专家策略用于处理语义理解、目标定位、动作规划与执行控制等子问题，提升系统在多任务场景下的泛化能力与稳定性。
-- 在挑战赛环境中完成方案验证，最终排名第 **5 / 77**，体现了方法在真实具身智能任务中的有效性与工程可落地性。
+- 完成机械臂底层控制接口、视觉感知模块与 OpenClaw 智能体框架的系统集成，使机械臂能够根据语义指令完成目标识别、任务分解、动作规划与执行。
+- 在当前测试任务中实现 100% 成功率的语义理解抓取，并支持高精度空间操作，验证了智能体驱动机械臂在开放式桌面操作任务中的可行性。
 
-<div style="display: flex; gap: 24px; align-items: flex-start; flex-wrap: wrap; justify-content: center; width: 90%; margin: 0 auto;">
-  <div style="flex: 1; min-width: 280px;">
-    <h3>Take wrong item shelf </h3>
-    <video style="width: 100%; height: auto; border-radius: 4px;" controls preload="none" playsinline poster="{{ site.baseurl }}/images/Take_wrong_item_shelf_web_poster.jpg">
-      <source data-src="{{ site.baseurl }}/images/Take_wrong_item_shelf_web.mp4" type="video/mp4">
-      您的浏览器不支持视频标签。
-    </video>
-  </div>
-  <div style="flex: 1; min-width: 280px;">
-    <h3>Hold pot</h3>
-    <video style="width: 100%; height: auto; border-radius: 4px;" controls preload="none" playsinline poster="{{ site.baseurl }}/images/hold_pot_web_poster.jpg">
-      <source data-src="{{ site.baseurl }}/images/hold_pot_web.mp4" type="video/mp4">
-      您的浏览器不支持视频标签。
-    </video>
-  </div>
-</div>
+### 演示视频
+
+<video width="100%" controls preload="none" playsinline poster="{{ site.baseurl }}/images/cups_web_poster.jpg">
+  <source data-src="{{ site.baseurl }}/images/cups_web.mp4" type="video/mp4">
+  您的浏览器不支持视频标签。
+</video>

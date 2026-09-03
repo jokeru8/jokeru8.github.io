@@ -1,16 +1,23 @@
 ---
-title: "OpenClaw 智能体机械臂系统接入"
+title: "Piper LeRobot：AgileX Piper 全链路真机集成｜GitHub（110+ stars）"
 collection: project
 ---
 
-将真实机械臂接入 OpenClaw 框架，构建了基于智能体大脑的感知、决策、执行一体化系统，实现从自然语言任务理解到机械臂空间操作的闭环控制。
+**Piper LeRobot** 是面向 AgileX Piper 六轴机械臂的完整 LeRobot 集成，覆盖主从遥操作、三路相机数据采集、模型训练与真机策略执行。在保留 Piper SDK/CAN 控制通道的基础上，参考 OpenPI Marvin 异步部署思路，补齐轨迹平滑、chunk 融合与真机生命周期管理。代码开源至 [GitHub](https://github.com/jokeru8/piper_lerobot)（**110+ stars**）。
 
-- 完成机械臂底层控制接口、视觉感知模块与 OpenClaw 智能体框架的系统集成，使机械臂能够根据语义指令完成目标识别、任务分解、动作规划与执行。
-- 在当前测试任务中实现 100% 成功率的语义理解抓取，并支持高精度空间操作，验证了智能体驱动机械臂在开放式桌面操作任务中的可行性。
+- **全链路工作流**：Piper leader → follower 主从遥操作；三路 OpenCV 相机采集，输出 LeRobot Dataset v3；支持 ACT、PI0/PI0.5 训练与多卡加速。
+- **统一部署层**：retime、插值、EMA、跨 chunk 融合、夹爪迟滞过滤，以及 start/home/hold 平滑退出，降低 chunk 边界抖动与夹爪误触发。
+- **双模式真机推理**：本地 RTC demo（SmolVLA/PI0/PI0.5）；gRPC 远程异步推理（policy server + robot client），支持 SSH 转发分离算力与真机。
+- **动作接口扩展**：默认 7 维 joint（6 轴 + 夹爪）可直接部署；预留 8 维 EEF 与可插拔 IK adapter 端口（待 Piper URDF/MJCF 验证）。
 
-### 演示视频
+<h3>长程任务：物体连续操作</h3>
+<video width="100%" controls preload="none" playsinline poster="{{ site.baseurl }}/images/拉抽屉长程_web_poster.jpg" style="border-radius: 4px;">
+  <source data-src="{{ site.baseurl }}/images/拉抽屉长程_web.mp4" type="video/mp4">
+  您的浏览器不支持视频标签。
+</video>
 
-<video width="100%" controls preload="none" playsinline poster="{{ site.baseurl }}/images/cups_web_poster.jpg">
-  <source data-src="{{ site.baseurl }}/images/cups_web.mp4" type="video/mp4">
+<h3>双臂操作</h3>
+<video width="100%" controls preload="none" playsinline poster="{{ site.baseurl }}/images/双臂操作_web_poster.jpg" style="border-radius: 4px;">
+  <source data-src="{{ site.baseurl }}/images/双臂操作_web.mp4" type="video/mp4">
   您的浏览器不支持视频标签。
 </video>
