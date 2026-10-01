@@ -95,7 +95,7 @@ redirect_from:
   <tr>
     <td>2026.9-至今</td>
     <td>Agibot 智元机器人</td>
-    <td>算法实习生</td>
+    <td>数据闭环算法实习生</td>
     <td>无本体数据预训练</td>
   </tr>
 </table>
