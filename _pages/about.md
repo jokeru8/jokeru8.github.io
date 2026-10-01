@@ -29,19 +29,19 @@ redirect_from:
 
 <table class="education-table news-table">
   <tr>
-    <td>2026</td>
+    <td>2026.9</td>
     <td>ELAN4D 被 <strong>CoRL 2026</strong> 录用</td>
   </tr>
   <tr>
-    <td>2026</td>
+    <td>2026.9</td>
     <td>KAM-WM 被 <strong>NeurIPS 2026 Robotics World Modeling Workshop</strong> 录用</td>
   </tr>
   <tr>
-    <td>2026</td>
+    <td>2026.9</td>
     <td>EMERGE-Policy 登上 <strong>机器之心</strong></td>
   </tr>
   <tr>
-    <td>2026</td>
+    <td>2026.9</td>
     <td>TurbidPose 被 <strong>RA-L</strong> 录用，转 <strong>ICRA 2027</strong></td>
   </tr>
 </table>
@@ -91,6 +91,12 @@ redirect_from:
     <td>SotaBot</td>
     <td>World Model 算法实习生</td>
     <td>搭建 π0.7 核心框架，部署真机后训练</td>
+  </tr>
+  <tr>
+    <td>2026.9-至今</td>
+    <td>Agibot 智元机器人</td>
+    <td>算法实习生</td>
+    <td>无本体数据预训练</td>
   </tr>
 </table>
 
