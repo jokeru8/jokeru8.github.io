@@ -23,6 +23,27 @@ redirect_from:
   </div>
 </div>
 
+<section id="news" class="portfolio-section" markdown="1">
+
+## News
+
+<table class="education-table news-table">
+  <tr>
+    <td>2026</td>
+    <td>ELAN4D 被 <strong>CoRL 2026</strong> 录用</td>
+  </tr>
+  <tr>
+    <td>2026</td>
+    <td>KAM-WM 被 <strong>NeurIPS 2026 Robotics World Modeling Workshop</strong> 录用</td>
+  </tr>
+  <tr>
+    <td>2026</td>
+    <td>TurbidPose 被 <strong>RA-L</strong> 录用，转 <strong>ICRA 2027</strong></td>
+  </tr>
+</table>
+
+</section>
+
 <section id="education" class="portfolio-section" markdown="1">
 
 ## 教育经历
@@ -107,7 +128,7 @@ redirect_from:
 
 <article class="entry-block" markdown="1">
 
-### ELAN4D：Embodiment-centric 4D Supervision for Robust VLA｜CoRL 2026 在投
+### ELAN4D：Embodiment-centric 4D Supervision for Robust VLA｜CoRL 2026
 
 面向 VLA 策略在相机视角、背景、物体布局等分布外场景中鲁棒性不足的问题，参与构建 embodiment-centric 4D 监督训练框架，通过机器人自身运动轨迹监督增强策略对未来动态的建模能力。
 - 利用 URDF 与关节角正运动学自动生成机器人关键点 4D 轨迹，作为无需外部 tracker 或场景重建的紧凑监督信号；通过 ControlNet 风格轻量 track decoder 注入 4D 信息，并采用梯度隔离保护预训练 VLM 表征。
@@ -124,7 +145,7 @@ redirect_from:
 
 <article class="entry-block" markdown="1">
 
-### KAM-WM：Kinematic Affordance from Frozen Video World Model｜CoRL 2026 在投
+### KAM-WM：Kinematic Affordance from Frozen Video World Model｜NeurIPS 2026 Robotics World Modeling Workshop
 
 面向少样本机器人操作中静态先验只能定位「在哪」、难以建模「如何接近」的问题，参与提出从冻结视频世界模型中提取一阶交互先验的策略学习框架。
 - 基于冻结 Wan 2.2 视频世界模型，在单次前向中读取 latent velocity 并构建 Kinematic Affordance Map，同时编码交互区域与粗粒度运动方向；使用 Perceiver 将 KAM 压缩为 8 个 tokens，用于条件化扩散策略，无需 video rollout 或世界模型微调。
@@ -138,7 +159,7 @@ redirect_from:
 
 <article class="entry-block" markdown="1">
 
-### Adaptive Horizon VLA - 自适应学习可变动作块 VLA｜ICRA 待投
+### Adaptive Horizon VLA - 自适应学习可变动作块 VLA｜ICRA 在投
 
 当前的 VLA 模型通常由 VLM 与一个策略动作头组成，两个模块之间通过隐式动作等中间变量进行信息交互。动作块与隐式动作通常采用固定长度，其长度往往由数据特征和人工设计决定，与类人行为的功能语义并不一致。
 - 提出自适应时域 VLA (AH VLA) 框架。该方法结合动作量化与字节对编码（BPE），将动作量化编码并进行分词，学习具有可变时域长度的隐式动作。在推理阶段，主干网络预测这些隐式动作，再由动作头将其解码为可执行的控制序列。
@@ -162,7 +183,7 @@ redirect_from:
 
 <article class="entry-block" markdown="1">
 
-### TurbidPose - 面向浑浊水下环境的自适应六自由度位姿估计算法｜RA-L 在投
+### TurbidPose - 面向浑浊水下环境的自适应六自由度位姿估计算法｜RA-L accept，ICRA 2027
 
 针对水下场景中常见的散射导致的浑浊、颜色偏移、照度快速变化等域偏移问题，提出一种抗环境干扰的 6 自由度（3D 旋转 + 3D 平移）位姿估计方法，支撑水下机器人自主作业的感知需求。
 - 在自注意力层中引入特征注入机制，通过程度显式可控的风格迁移实现一种风格噪声可控的数据增强，生成具有高真实感且保留关键特征的合成训练样本，从而系统性提升模型对浑浊、照明变化的适应能力。

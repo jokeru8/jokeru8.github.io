@@ -64,6 +64,7 @@ body.portfolio-showcase #main:not(:has(.sidebar)) {
 /* Anchor offset under fixed masthead */
 #education,
 #internship,
+#news,
 #papers,
 #projects,
 .entry-block--media {
@@ -341,6 +342,23 @@ body.portfolio-showcase #main:not(:has(.sidebar)) {
 
   td {
     padding-right: 1.5em;
+    white-space: nowrap;
+  }
+
+  tr td:last-child {
+    padding-right: 0;
+  }
+}
+
+#news .news-table {
+  width: auto !important;
+  table-layout: auto;
+
+  td {
+    padding-right: 1.5em;
+  }
+
+  tr td:first-child {
     white-space: nowrap;
   }
 
