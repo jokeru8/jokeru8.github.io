@@ -13,7 +13,7 @@ redirect_from:
     <div class="hero-copy">
       <h1 class="hero-name">周柯儒</h1>
       <p class="hero-line">THU SIGS 硕士</p>
-      <p class="hero-line">研究方向: 具身智能 机械臂操作 真机后训练</p>
+      <p class="hero-line">研究方向: 具身智能 机械臂操作 真机后训练 表征学习 无本体数据预训练</p>
       <div class="hero-meta">
         <a href="mailto:zhoukr25@mails.tsinghua.edu.cn">zhoukr25@mails.tsinghua.edu.cn</a>
         <a href="https://github.com/jokeru8">GitHub</a>
@@ -35,6 +35,10 @@ redirect_from:
   <tr>
     <td>2026</td>
     <td>KAM-WM 被 <strong>NeurIPS 2026 Robotics World Modeling Workshop</strong> 录用</td>
+  </tr>
+  <tr>
+    <td>2026</td>
+    <td>EMERGE-Policy 登上 <strong>机器之心</strong></td>
   </tr>
   <tr>
     <td>2026</td>
