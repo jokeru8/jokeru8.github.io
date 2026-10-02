@@ -125,9 +125,9 @@ redirect_from:
 
 <article class="entry-block" markdown="1">
 
-### EMERGE-Policy: A Robot Mind Emerges Beyond a Single Policy
+### EMERGE-Policy: A Robot Mind Emerges Beyond a Single Policy｜GitHub（300+ stars）
 
-面向端到端方法难以处理长程任务的问题，建立统一的功能型 Skill 接口。
+面向端到端方法难以处理长程任务的问题，建立统一的功能型 Skill 接口。代码开源至 [GitHub](https://github.com/EMERGE-Policy/EMERGE-Policy)（**300+ stars**）。
 - 将 VLA、World Model、Verifier 和运动原语分别抽象为 Operational、Imagination 与 Evaluation Skills，实现不同模型和控制后端的即插即用式组合。
 - 设计分层上下文与 Token-Aware 记忆机制，由 Perception、Verification、Monitor Sub Agents 在隔离上下文中异步处理密集信息。
 - 引入基于 World Model 的「想象—评估—执行」技能闭环，生成并评估候选动作及未来状态，在各个 benchmark 上取得最好效果。
