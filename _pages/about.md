@@ -13,7 +13,7 @@ redirect_from:
     <div class="hero-copy">
       <h1 class="hero-name">周柯儒</h1>
       <p class="hero-line">清华大学 · 人工智能硕士</p>
-      <p class="hero-line">研究方向：具身智能、机器人操作、视觉表征学习与真机后训练</p>
+      <p class="hero-line">研究方向：具身智能、机器人操作、无本体/真机后训练、Ego数据预训练</p>
       <div class="hero-meta">
         <a href="mailto:zhoukr25@mails.tsinghua.edu.cn">zhoukr25@mails.tsinghua.edu.cn</a>
         <a href="https://github.com/jokeru8">GitHub</a>
@@ -81,10 +81,10 @@ redirect_from:
 
 <table class="education-table internship-table">
   <tr>
-    <td>2026.3-2026.6</td>
-    <td>iData研究院</td>
-    <td>具身智能算法实习生</td>
-    <td>ICRA AgiBot World Challenge，Rank <strong>5 / 77</strong></td>
+    <td>2026.9-至今</td>
+    <td>Agibot 智元机器人</td>
+    <td>数据闭环算法实习生</td>
+    <td>Ego预训练，数据闭环验证</td>
   </tr>
   <tr>
     <td>2026.6-2026.9</td>
@@ -93,10 +93,10 @@ redirect_from:
     <td>搭建 π0.7 核心框架，部署真机后训练</td>
   </tr>
   <tr>
-    <td>2026.9-至今</td>
-    <td>Agibot 智元机器人</td>
-    <td>数据闭环算法实习生</td>
-    <td>无本体数据预训练</td>
+    <td>2026.3-2026.6</td>
+    <td>iData研究院</td>
+    <td>具身智能算法实习生</td>
+    <td>ICRA AgiBot World Challenge，Rank <strong>5 / 77</strong></td>
   </tr>
 </table>
 
