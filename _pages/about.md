@@ -12,8 +12,8 @@ redirect_from:
     <img class="hero-avatar" src="/images/duckyo_web.jpg" alt="周柯儒" width="120" height="120" fetchpriority="high">
     <div class="hero-copy">
       <h1 class="hero-name">周柯儒</h1>
-      <p class="hero-line">THU SIGS 硕士</p>
-      <p class="hero-line">研究方向: 具身智能 机械臂操作 真机后训练 表征学习 无本体数据预训练</p>
+      <p class="hero-line">清华大学 · 人工智能硕士</p>
+      <p class="hero-line">研究方向：具身智能、机器人操作、视觉表征学习与真机后训练</p>
       <div class="hero-meta">
         <a href="mailto:zhoukr25@mails.tsinghua.edu.cn">zhoukr25@mails.tsinghua.edu.cn</a>
         <a href="https://github.com/jokeru8">GitHub</a>
@@ -108,24 +108,17 @@ redirect_from:
 
 <article class="entry-block" markdown="1">
 
-### World Model-Augmented Hierarchical VLA for Long-Horizon Manipulation
+### Ego-CEVR: Learning Cross-Embodiment Visual Representations from Ego Videos｜CVPR 在投
 
-面向长时序机器人操作中动作模型缺乏高层规划、未来目标与历史状态建模的问题，设计并实现世界模型增强的分层 VLA 框架，将语言任务拆解、视觉子目标生成与底层动作控制统一到闭环系统中。
-- 参考 π0.7 分层框架联合训练 Cosmos 3 的 Reasoner 与 Generator，并在真机数据上微调：将任务拆解为经验分布内可执行的 subtask，预测未来 50 帧视频并抽取 5 个关键帧作为视觉 subgoal；同时从历史观测中采样关键帧构建 memory。
-- 构建下游策略模型，将 task、subtask、subgoal 与 memory 共同作为策略条件；使用同构图像编码器将 memory 和 subgoal 编码为视觉 token，并通过块间注意力机制注入策略主干，实现长短程记忆增强以及语言 subtask 与视觉 subgoal 的统一条件控制。
-
-### 演示视频
-
-<video width="100%" controls preload="none" playsinline poster="{{ site.baseurl }}/images/sota-wla_web_poster.jpg" style="border-radius: 4px;">
-  <source data-src="{{ site.baseurl }}/images/sota-wla_web.mp4" type="video/mp4">
-  您的浏览器不支持视频标签。
-</video>
+针对人类第一视角视频缺少机器人动作标注、跨本体迁移难以兼顾任务理解与精细控制的问题，提出分层视觉表征框架。
+- 通过人类第一视角及机器人头部视角视频的未来预测学习全局任务表征，利用真机示教中的腕部视角与动作监督学习局部交互表征，并将两类表征接入动作策略。
+- 在 LIBERO-Plus 上取得 **90.2%** 的平均成功率，在 RoboTwin 2.0 Hard 设置下取得 **70.7%** 的成功率，并验证少样本跨本体适应能力。
 
 </article>
 
 <article class="entry-block" markdown="1">
 
-### EMERGE-Policy: A Robot Mind Emerges Beyond a Single Policy｜GitHub（300+ stars）
+### EMERGE-Policy: A Robot Mind Emerges Beyond a Single Policy｜ICLR 在投｜机器之心
 
 面向端到端方法难以处理长程任务的问题，建立统一的功能型 Skill 接口。代码开源至 [GitHub](https://github.com/EMERGE-Policy/EMERGE-Policy)（**300+ stars**）。
 - 将 VLA、World Model、Verifier 和运动原语分别抽象为 Operational、Imagination 与 Evaluation Skills，实现不同模型和控制后端的即插即用式组合。
@@ -155,21 +148,7 @@ redirect_from:
 
 <article class="entry-block" markdown="1">
 
-### KAM-WM：Kinematic Affordance from Frozen Video World Model｜NeurIPS 2026 Robotics World Modeling Workshop
-
-面向少样本机器人操作中静态先验只能定位「在哪」、难以建模「如何接近」的问题，参与提出从冻结视频世界模型中提取一阶交互先验的策略学习框架。
-- 基于冻结 Wan 2.2 视频世界模型，在单次前向中读取 latent velocity 并构建 Kinematic Affordance Map，同时编码交互区域与粗粒度运动方向；使用 Perceiver 将 KAM 压缩为 8 个 tokens，用于条件化扩散策略，无需 video rollout 或世界模型微调。
-- 负责真机侧系统搭建与部署验证，完成基于真实机械臂观测图像的策略 rollout 定性评估；方法在 LIBERO 上平均成功率达 90.6%，RoboTwin 2.0 Easy / Hard 分别达 65.7% / 22.4%。
-
-<img src="{{ site.baseurl }}/images/KAM_frame.png" alt="KAM frame" style="width: 100%; border-radius: 4px;" loading="lazy">
-
-<img src="{{ site.baseurl }}/images/KAM.png" alt="KAM" style="width: 100%; border-radius: 4px;" loading="lazy">
-
-</article>
-
-<article class="entry-block" markdown="1">
-
-### Adaptive Horizon VLA - 自适应学习可变动作块 VLA｜ICRA 在投
+### Adaptive Horizon VLA: A VLA Model with Learnable Latent Bridging Language｜ICRA 在投
 
 当前的 VLA 模型通常由 VLM 与一个策略动作头组成，两个模块之间通过隐式动作等中间变量进行信息交互。动作块与隐式动作通常采用固定长度，其长度往往由数据特征和人工设计决定，与类人行为的功能语义并不一致。
 - 提出自适应时域 VLA (AH VLA) 框架。该方法结合动作量化与字节对编码（BPE），将动作量化编码并进行分词，学习具有可变时域长度的隐式动作。在推理阶段，主干网络预测这些隐式动作，再由动作头将其解码为可执行的控制序列。
@@ -188,6 +167,20 @@ redirect_from:
     </video>
   </div>
 </div>
+
+</article>
+
+<article class="entry-block" markdown="1">
+
+### KAM-WM：Kinematic Affordance from Frozen Video World Model｜NeurIPS 2026 Robotics World Modeling Workshop
+
+面向少样本机器人操作中静态先验只能定位「在哪」、难以建模「如何接近」的问题，参与提出从冻结视频世界模型中提取一阶交互先验的策略学习框架。
+- 基于冻结 Wan 2.2 视频世界模型，在单次前向中读取 latent velocity 并构建 Kinematic Affordance Map，同时编码交互区域与粗粒度运动方向；使用 Perceiver 将 KAM 压缩为 8 个 tokens，用于条件化扩散策略，无需 video rollout 或世界模型微调。
+- 负责真机侧系统搭建与部署验证，完成基于真实机械臂观测图像的策略 rollout 定性评估；方法在 LIBERO 上平均成功率达 90.6%，RoboTwin 2.0 Easy / Hard 分别达 65.7% / 22.4%。
+
+<img src="{{ site.baseurl }}/images/KAM_frame.png" alt="KAM frame" style="width: 100%; border-radius: 4px;" loading="lazy">
+
+<img src="{{ site.baseurl }}/images/KAM.png" alt="KAM" style="width: 100%; border-radius: 4px;" loading="lazy">
 
 </article>
 

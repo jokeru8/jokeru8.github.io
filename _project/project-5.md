@@ -1,9 +1,9 @@
 ---
-title: "Robo-annotate：具身智能半自动标注引擎｜GitHub"
+title: "Robo-Annotate：具身智能半自动标注引擎｜GitHub"
 collection: project
 ---
 
-**Robo-annotate** 是面向具身智能数据的开放式半自动标注引擎，支持 LeRobot v2.1 数据集与 Qwen3.8-27B 两阶段推理，将机器人视频标注从「模型猜一次」变为可检查、可恢复、可发布的工程流程。项目已开源至 [GitHub](https://github.com/jokeru8/Robo-annotate)。
+**Robo-Annotate** 是面向具身智能数据的开放式半自动标注引擎，支持 LeRobot v2.1 与 v3.0 数据集，采用 Qwen3.8-27B 两阶段推理，将机器人视频标注从「模型猜一次」变为可检查、可恢复、可发布的工程流程。项目已开源至 [GitHub](https://github.com/jokeru8/qwen_annotate)。
 
 - 实现两阶段自动标注：整集稀疏粗定位 + 多相机高密度边界精修，结合主视角与腕部相机联合判断动作切换。
 - 采用模板约束输出与确定性硬约束校验，低置信度或证据冲突的 episode 自动进入 `needs_review`，避免静默发布错误标注。

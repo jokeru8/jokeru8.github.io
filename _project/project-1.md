@@ -1,5 +1,5 @@
 ---
-title: "ICRA AgiBot World Challenge-irobot"
+title: "ICRA AgiBot World Challenge｜MoE 任务专家策略｜Rank 5 / 77"
 collection: project
 ---
 
