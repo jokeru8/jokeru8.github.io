@@ -108,17 +108,19 @@ redirect_from:
 
 <article class="entry-block" markdown="1">
 
-### Ego-CEVR: Learning Cross-Embodiment Visual Representations from Ego Videos｜CVPR 在投
+### Ego-CEVR: Learning Cross-Embodiment Visual Representations from Ego Videos｜在投
 
 针对人类第一视角视频缺少机器人动作标注、跨本体迁移难以兼顾任务理解与精细控制的问题，提出分层视觉表征框架。
 - 通过人类第一视角及机器人头部视角视频的未来预测学习全局任务表征，利用真机示教中的腕部视角与动作监督学习局部交互表征，并将两类表征接入动作策略。
 - 在 LIBERO-Plus 上取得 **90.2%** 的平均成功率，在 RoboTwin 2.0 Hard 设置下取得 **70.7%** 的成功率，并验证少样本跨本体适应能力。
 
+<img src="{{ site.baseurl }}/images/ego-cevr-framework.png" alt="Ego-CEVR 分层视觉表征与双路径动作条件化框架图" width="1908" height="792" style="width: 100%; border-radius: 4px;" loading="lazy">
+
 </article>
 
 <article class="entry-block" markdown="1">
 
-### EMERGE-Policy: A Robot Mind Emerges Beyond a Single Policy｜ICLR 在投｜机器之心
+### EMERGE-Policy: A Robot Mind Emerges Beyond a Single Policy｜在投｜机器之心
 
 面向端到端方法难以处理长程任务的问题，建立统一的功能型 Skill 接口。代码开源至 [GitHub](https://github.com/EMERGE-Policy/EMERGE-Policy)（**300+ stars**）。
 - 将 VLA、World Model、Verifier 和运动原语分别抽象为 Operational、Imagination 与 Evaluation Skills，实现不同模型和控制后端的即插即用式组合。
@@ -148,7 +150,7 @@ redirect_from:
 
 <article class="entry-block" markdown="1">
 
-### Adaptive Horizon VLA: A VLA Model with Learnable Latent Bridging Language｜ICRA 在投
+### Adaptive Horizon VLA: A VLA Model with Learnable Latent Bridging Language｜在投
 
 当前的 VLA 模型通常由 VLM 与一个策略动作头组成，两个模块之间通过隐式动作等中间变量进行信息交互。动作块与隐式动作通常采用固定长度，其长度往往由数据特征和人工设计决定，与类人行为的功能语义并不一致。
 - 提出自适应时域 VLA (AH VLA) 框架。该方法结合动作量化与字节对编码（BPE），将动作量化编码并进行分词，学习具有可变时域长度的隐式动作。在推理阶段，主干网络预测这些隐式动作，再由动作头将其解码为可执行的控制序列。
