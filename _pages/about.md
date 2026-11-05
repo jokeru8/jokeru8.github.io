@@ -79,26 +79,47 @@ redirect_from:
 
 ## 实习经历
 
-<table class="education-table internship-table">
-  <tr>
-    <td>2026.9-至今</td>
-    <td>Agibot 智元机器人</td>
-    <td>数据闭环算法实习生</td>
-    <td>Ego预训练，数据闭环验证</td>
-  </tr>
-  <tr>
-    <td>2026.6-2026.9</td>
-    <td>SotaBot</td>
-    <td>World Model 算法实习生</td>
-    <td>搭建 π0.7 核心框架，部署真机后训练</td>
-  </tr>
-  <tr>
-    <td>2026.3-2026.6</td>
-    <td>iData研究院</td>
-    <td>具身智能算法实习生</td>
-    <td>ICRA AgiBot World Challenge，Rank <strong>5 / 77</strong></td>
-  </tr>
-</table>
+<article class="entry-block internship-entry">
+  <span class="internship-entry__date">2026.9–至今</span>
+  <div class="internship-entry__content">
+    <div class="internship-entry__headline">
+      <h3 class="internship-entry__org">Agibot 智元机器人</h3>
+      <span class="internship-entry__role">数据闭环算法实习生</span>
+    </div>
+    <ul class="internship-entry__work">
+      <li><strong>Ego-CEVR 数据闭环验证：</strong>参与万小时预训练、千小时中训练，负责分层学习模块设计。</li>
+      <li><strong>快递包裹分拣：</strong>参与百小时级真机后训练及策略部署，验证真实场景中的操作效果。</li>
+    </ul>
+  </div>
+</article>
+
+<article class="entry-block internship-entry">
+  <span class="internship-entry__date">2026.6–2026.9</span>
+  <div class="internship-entry__content">
+    <div class="internship-entry__headline">
+      <h3 class="internship-entry__org">SotaBot 索塔无界</h3>
+      <span class="internship-entry__role">世界模型算法实习生</span>
+    </div>
+    <ul class="internship-entry__work">
+      <li><strong>RealRobot-100：</strong>搭建真机 DAgger 框架，支持无本体后训练、在线纠偏与异步推理。</li>
+      <li><strong>Robo-Annotate：</strong>开发具身数据半自动标注引擎，构建自动标注与人工复核流程。</li>
+    </ul>
+  </div>
+</article>
+
+<article class="entry-block internship-entry">
+  <span class="internship-entry__date">2026.3–2026.6</span>
+  <div class="internship-entry__content">
+    <div class="internship-entry__headline">
+      <h3 class="internship-entry__org">iData研究院</h3>
+      <span class="internship-entry__role">具身智能算法实习生</span>
+    </div>
+    <ul class="internship-entry__work">
+      <li><strong>ICRA AgiBot World Challenge：</strong>设计 MoE 任务专家策略，团队取得第 5 名（77 支队伍）。</li>
+      <li><strong>OpenClaw 机械臂：</strong>集成感知、任务规划与执行模块，构建自然语言驱动的长程操作闭环。</li>
+    </ul>
+  </div>
+</article>
 
 </section>
 

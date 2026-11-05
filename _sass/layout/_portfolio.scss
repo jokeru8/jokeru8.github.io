@@ -336,17 +336,49 @@ body.portfolio-showcase #main:not(:has(.sidebar)) {
   }
 }
 
-#internship .internship-table {
-  width: auto !important;
-  table-layout: auto;
+#internship .internship-entry {
+  display: grid;
+  grid-template-columns: 7.75rem minmax(0, 1fr);
+  column-gap: 1.25rem;
+  align-items: start;
 
-  td {
-    padding-right: 1.5em;
+  .internship-entry__date {
+    padding-top: 0.15rem;
+    color: var(--global-text-color-light);
+    font-size: 0.9rem;
+    font-variant-numeric: tabular-nums;
     white-space: nowrap;
   }
 
-  tr td:last-child {
-    padding-right: 0;
+  .internship-entry__content {
+    min-width: 0;
+  }
+
+  .internship-entry__headline {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.15rem 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .internship-entry__org {
+    margin: 0;
+    color: $portfolio-accent;
+    font-family: $portfolio-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .internship-entry__role {
+    color: var(--global-text-color-light);
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .internship-entry__work {
+    margin-top: 0;
   }
 }
 
@@ -509,6 +541,7 @@ body.portfolio-showcase #main:not(:has(.sidebar)) {
 html[data-theme="dark"] {
   .page__title,
   .entry-block > h3,
+  #internship .internship-entry .internship-entry__org,
   .showcase-item__title,
   .portfolio-hero .hero-name {
     color: #e8eef2;
@@ -697,6 +730,22 @@ html[data-theme="dark"] {
     video,
     img {
       max-width: 100%;
+    }
+  }
+
+  #internship .internship-entry {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.35rem;
+
+    .internship-entry__date {
+      padding-top: 0;
+      font-size: 0.85rem;
+    }
+
+    .internship-entry__headline {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.15rem;
     }
   }
 
