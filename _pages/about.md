@@ -114,7 +114,7 @@ redirect_from:
 - 通过人类第一视角及机器人头部视角视频的未来预测学习全局任务表征，利用真机示教中的腕部视角与动作监督学习局部交互表征，并将两类表征接入动作策略。
 - 在 LIBERO-Plus 上取得 **90.2%** 的平均成功率，在 RoboTwin 2.0 Hard 设置下取得 **70.7%** 的成功率，并验证少样本跨本体适应能力。
 
-<img src="{{ site.baseurl }}/images/ego-cevr-framework.png" alt="Ego-CEVR 分层视觉表征与双路径动作条件化框架图" width="1908" height="792" style="width: 100%; border-radius: 4px;" loading="lazy">
+<img src="{{ site.baseurl }}/images/ego-cevr-framework.png" alt="Ego-CEVR 多源预训练、层级表征学习及跨本体适应流程图" width="1650" height="760" style="width: 100%; border-radius: 4px;" loading="lazy">
 
 </article>
 
